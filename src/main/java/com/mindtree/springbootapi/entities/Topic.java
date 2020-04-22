@@ -2,13 +2,16 @@ package com.mindtree.springbootapi.entities;
 
 import javax.persistence.Entity;
 import javax.persistence.Id;
+import javax.validation.constraints.NotNull;
 
 @Entity
 public class Topic {
 	
     @Id 
 	private String id;
+    @NotNull
 	private String name;
+    @NotNull
 	private String description;
 
 	public Topic() {
