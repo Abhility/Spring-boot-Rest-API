@@ -4,4 +4,5 @@ com\mindtree\springbootapi\Response.class
 com\mindtree\springbootapi\dao\TopicRepository.class
 com\mindtree\springbootapi\entities\Topic.class
 com\mindtree\springbootapi\ListResponse.class
+com\mindtree\springbootapi\App$1.class
 com\mindtree\springbootapi\services\TopicService.class
