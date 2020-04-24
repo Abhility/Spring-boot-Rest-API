@@ -20,16 +20,16 @@ public class TopicService {
 	public ListResponse<Topic> getTopics() {
 		List<Topic> topics = new ArrayList<>();
 		topicRepository.findAll().forEach(topics::add);
-		return new ListResponse<>(200, "OK", topics);
+		return new ListResponse<>(200, "OK", topics,topics.size());
 	}
 
 	public Response<Topic> getTopic(String id) {
 		Topic topic = topicRepository.findById(id).orElse(null);
-		return new Response<Topic>(200, "OK", topic);
+		return topic == null ? new Response<Topic>(404, "Not Found", topic) : new Response<Topic>(200, "OK", topic);
 	}
 
 	public Topic addTopic(Topic topic) {
 		return topicRepository.save(topic);
 	}
-	
+
 }

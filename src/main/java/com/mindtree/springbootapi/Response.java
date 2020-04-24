@@ -21,24 +21,11 @@ public class Response<T> {
 		return statusCode;
 	}
 
-	public void setStatusCode(Integer statusCode) {
-		this.statusCode = statusCode;
-	}
-
 	public String getStatus() {
 		return status;
-	}
-
-	public void setStatus(String status) {
-		this.status = status;
 	}
 
 	public T getData() {
 		return data;
 	}
-
-	public void setData(T data) {
-		this.data = data;
-	}
-
 }
