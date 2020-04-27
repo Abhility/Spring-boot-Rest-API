@@ -1,4 +1,4 @@
-package com.mindtree.springbootapi;
+package com.mindtree.springbootapi.models;
 
 public class Response<T> {
 

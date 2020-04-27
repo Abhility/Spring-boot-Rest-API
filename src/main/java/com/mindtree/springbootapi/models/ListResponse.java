@@ -1,4 +1,4 @@
-package com.mindtree.springbootapi;
+package com.mindtree.springbootapi.models;
 
 import java.util.List;
 

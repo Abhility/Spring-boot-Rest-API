@@ -1,17 +1,18 @@
-package com.mindtree.springbootapi.entities;
+package com.mindtree.springbootapi.models;
 
 import javax.persistence.Entity;
 import javax.persistence.Id;
-import javax.validation.constraints.NotNull;
+import javax.validation.constraints.NotBlank;
 
 @Entity
 public class Topic {
 	
-    @Id 
+    @Id
+	@NotBlank(message = "Id cannot be null or empty")
 	private String id;
-    @NotNull
+	@NotBlank(message = "Name cannot be null or empty")
 	private String name;
-    @NotNull
+	@NotBlank(message = "Description cannot be null or empty")
 	private String description;
 
 	public Topic() {
