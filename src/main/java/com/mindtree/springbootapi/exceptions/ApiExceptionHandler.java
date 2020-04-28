@@ -10,7 +10,7 @@ import java.time.ZonedDateTime;
 
 @ControllerAdvice
 public class ApiExceptionHandler {
-    
+
     @ExceptionHandler(value = {ApiException.class})
     public ResponseEntity<Object> handleExceptions(ApiException apiException){
         HttpStatus httpStatus = apiException.getHttpStatus();
