@@ -24,15 +24,15 @@ public class TopicService {
 		return new ListResponse<>(200, "OK", topics,topics.size());
 	}
 
-	public Response<Topic> getTopic(String id){
+	public Response<Topic> getTopic(Integer id){
 		Topic topic = topicRepository.findById(id).orElse(null);
 		if(topic!=null)
 			return new Response<Topic>(200, "OK", topic);
 		throw new ApiException("Topic not found", HttpStatus.NOT_FOUND);
 	}
 
-	public Topic addTopic(Topic topic) {
-		return topicRepository.save(topic);
+	public Response<Topic> addTopic(Topic topic) {
+		return new Response<>(201,"CREATED",topicRepository.save(topic));
 	}
 
 }

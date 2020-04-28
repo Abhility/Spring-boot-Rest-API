@@ -1,28 +1,23 @@
 package com.mindtree.springbootapi.exceptions;
 
-import com.fasterxml.jackson.core.JsonParseException;
-import com.fasterxml.jackson.databind.JsonMappingException;
-import com.fasterxml.jackson.databind.exc.MismatchedInputException;
 import com.mindtree.springbootapi.models.ErrorResponse;
-import org.hibernate.id.IdentifierGenerationException;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.ControllerAdvice;
 import org.springframework.web.bind.annotation.ExceptionHandler;
 
-import javax.persistence.RollbackException;
-import javax.validation.ConstraintViolationException;
 import java.time.ZonedDateTime;
 
 @ControllerAdvice
 public class ApiExceptionHandler {
+    
     @ExceptionHandler(value = {ApiException.class})
     public ResponseEntity<Object> handleExceptions(ApiException apiException){
         HttpStatus httpStatus = apiException.getHttpStatus();
         return new ResponseEntity<>(new ErrorResponse(apiException.getMessage(),httpStatus, ZonedDateTime.now()),httpStatus);
     }
 
-    @ExceptionHandler(value = {MismatchedInputException.class, JsonParseException.class, JsonMappingException.class, IdentifierGenerationException.class})
+    /*@ExceptionHandler(value = {MismatchedInputException.class, JsonParseException.class, JsonMappingException.class, IdentifierGenerationException.class})
     public ResponseEntity<Object> handleExceptions(Exception exception){
         HttpStatus httpStatus = HttpStatus.BAD_REQUEST;
         return new ResponseEntity<>(new ErrorResponse("Invalid body sent",httpStatus, ZonedDateTime.now()),httpStatus);
@@ -46,6 +41,6 @@ public class ApiExceptionHandler {
             exception = exception.getCause();
         }
         return new ResponseEntity<>(new ErrorResponse(exception.getMessage(),httpStatus, ZonedDateTime.now()),httpStatus);
-    }
+    }*/
 
 }
