@@ -2,13 +2,12 @@ package com.mindtree.springbootapi.configs;
 
 import com.mindtree.springbootapi.services.MyUserDetailsService;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.context.annotation.Bean;
+import org.springframework.http.HttpMethod;
 import org.springframework.security.config.annotation.authentication.builders.AuthenticationManagerBuilder;
 import org.springframework.security.config.annotation.web.builders.HttpSecurity;
 import org.springframework.security.config.annotation.web.configuration.EnableWebSecurity;
 import org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter;
-import org.springframework.security.crypto.password.NoOpPasswordEncoder;
-import org.springframework.security.crypto.password.PasswordEncoder;
+import org.springframework.security.web.csrf.CookieCsrfTokenRepository;
 
 @EnableWebSecurity
 public class SecurityConfig extends WebSecurityConfigurerAdapter {
@@ -23,17 +22,22 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
 
     @Override
     protected void configure(HttpSecurity http) throws Exception {
-        http.authorizeRequests()
-                .antMatchers("/**")
-                .hasAnyRole("ADMIN","USER")
+        http
+                .csrf()
+                .csrfTokenRepository(CookieCsrfTokenRepository.withHttpOnlyFalse())
                 .and()
-                .formLogin();
-
+                .authorizeRequests()
+                .antMatchers(HttpMethod.POST,"/sample/api/users")
+                .permitAll()
+                .antMatchers(HttpMethod.GET,"/sample/api/users")
+                .hasRole("ADMIN")
+                .antMatchers(HttpMethod.POST,"/sample/api/**")
+                .hasAnyRole("ADMIN","ADMINTRAINEE")
+                .antMatchers(HttpMethod.GET,"/sample/api/**")
+                .hasAnyRole("USER","ADMIN","ADMINTRAINEE")
+                .anyRequest()
+                .authenticated()
+                .and()
+                .httpBasic();
     }
-
-    @Bean
-    public PasswordEncoder getPasswordEncoder(){
-        return NoOpPasswordEncoder.getInstance();
-    }
-
 }

@@ -1,36 +1,37 @@
 package com.mindtree.springbootapi.models;
 
+import com.mindtree.springbootapi.listeners.UserEntityListener;
+import org.springframework.security.core.GrantedAuthority;
+
 import javax.persistence.*;
+import java.util.Set;
 
 @Entity
 @Table(name = "User_Table")
+@EntityListeners({UserEntityListener.class})
 public class User {
-
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
-    private String id;
+    private Integer id;
     @Column(unique = true)
     private String userName;
     private String password;
     private String role;
+    @Transient
+    private String type;
     private Boolean status;
+
+    @Transient
+    private Set<GrantedAuthority> authorities;
 
     public User() {
     }
 
-    public User(String id, String userName, String password, String role, Boolean status) {
-        this.id = id;
-        this.userName = userName;
-        this.password = password;
-        this.role = role;
-        this.status = status;
-    }
-
-    public String getId() {
+    public Integer getId() {
         return id;
     }
 
-    public void setId(String id) {
+    public void setId(Integer id) {
         this.id = id;
     }
 
@@ -66,19 +67,32 @@ public class User {
         this.status = active;
     }
 
-    @PrePersist
-    @PreUpdate
-    private void setStatus() {
-        System.out.println("Setting status");
-        System.out.println("Current value: " + status);
-        this.status = true;
+    public String getType() {
+        return type;
     }
 
-    @PostPersist
-    @PostUpdate
-    @PostLoad
-    private void checkStatus() {
-        System.out.println("Status set");
-        System.out.println("Set value: " + status);
+    public void setType(String type) {
+        this.type = type;
+    }
+
+    public Set<GrantedAuthority> getAuthorities() {
+        return authorities;
+    }
+
+    public void setAuthorities(Set<GrantedAuthority> authorities) {
+        this.authorities = authorities;
+    }
+
+    @Override
+    public String toString() {
+        return "User{" +
+                "id=" + id +
+                ", userName='" + userName + '\'' +
+                ", password='" + password + '\'' +
+                ", role='" + role + '\'' +
+                ", type='" + type + '\'' +
+                ", status=" + status +
+                ", authorities=" + authorities +
+                '}';
     }
 }
