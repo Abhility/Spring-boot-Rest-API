@@ -1,5 +1,8 @@
 package com.mindtree.springbootapi.configs;
 
+import com.mindtree.springbootapi.jwt.JwtConfig;
+import com.mindtree.springbootapi.jwt.JwtUsernameAndPasswordAuthenticationFilter;
+import com.mindtree.springbootapi.jwt.JwtValidator;
 import com.mindtree.springbootapi.services.MyUserDetailsService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpMethod;
@@ -8,14 +11,18 @@ import org.springframework.security.config.annotation.method.configuration.Enabl
 import org.springframework.security.config.annotation.web.builders.HttpSecurity;
 import org.springframework.security.config.annotation.web.configuration.EnableWebSecurity;
 import org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter;
+import org.springframework.security.config.http.SessionCreationPolicy;
 import org.springframework.security.web.csrf.CookieCsrfTokenRepository;
 
 @EnableWebSecurity
 @EnableGlobalMethodSecurity(prePostEnabled = true)
-public class SecurityConfig extends WebSecurityConfigurerAdapter {
+public class AppSecurityConfig extends WebSecurityConfigurerAdapter {
 
     @Autowired
     private MyUserDetailsService myUserDetailsService;
+
+    @Autowired
+    private JwtConfig jwtConfig;
 
     @Override
     protected void configure(AuthenticationManagerBuilder auth) throws Exception {
@@ -28,8 +35,13 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
                 .csrf()
                 .csrfTokenRepository(CookieCsrfTokenRepository.withHttpOnlyFalse())
                 .and()
+                .sessionManagement()
+                .sessionCreationPolicy(SessionCreationPolicy.STATELESS)
+                .and()
+                .addFilter(new JwtUsernameAndPasswordAuthenticationFilter(authenticationManager(),jwtConfig))
+                .addFilterAfter(new JwtValidator(jwtConfig),JwtUsernameAndPasswordAuthenticationFilter.class)
                 .authorizeRequests()
-                .antMatchers(HttpMethod.POST,"/sample/api/users")
+                .antMatchers(HttpMethod.POST, "/sample/api/users")
                 .permitAll()
                 .antMatchers("/")
                 .permitAll()
@@ -47,8 +59,6 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
                 .hasAnyAuthority(TOPIC_READ.getAuthority(),
                                  CHAPTER_READ.getAuthority())*/
                 .anyRequest()
-                .authenticated()
-                .and()
-                .httpBasic();
+                .authenticated();
     }
 }

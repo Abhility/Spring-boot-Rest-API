@@ -3,11 +3,10 @@
   <component name="ChangeListManager">
     <list default="true" id="58aa2c4b-65a4-4d2f-baaa-fb4984058e17" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mindtree/springbootapi/configs/SecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mindtree/springbootapi/configs/SecurityConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mindtree/springbootapi/controllers/ChapterController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mindtree/springbootapi/controllers/ChapterController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mindtree/springbootapi/controllers/TopicController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mindtree/springbootapi/controllers/TopicController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mindtree/springbootapi/controllers/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mindtree/springbootapi/controllers/UserController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mindtree/springbootapi/listeners/UserEntityListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mindtree/springbootapi/listeners/UserEntityListener.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-api.iml" beforeDir="false" afterPath="$PROJECT_DIR$/spring-boot-api.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mindtree/springbootapi/configs/SecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mindtree/springbootapi/configs/AppSecurityConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -23,12 +22,12 @@
     <favorites_list name="spring-boot-api" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/mindtree/springbootapi/listeners/UserEntityListener.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/mindtree/springbootapi/jwt/JwtUsernameAndPasswordAuthenticationFilter.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1340">
-              <caret line="67" column="38" lean-forward="true" selection-start-line="67" selection-start-column="38" selection-end-line="67" selection-end-column="38" />
+            <state relative-caret-position="302">
+              <caret line="57" selection-start-line="57" selection-end-line="57" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -37,10 +36,10 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/mindtree/springbootapi/controllers/ChapterController.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/mindtree/springbootapi/configs/AppSecurityConfig.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="140">
-              <caret line="23" lean-forward="true" selection-start-line="23" selection-end-line="23" />
+            <state relative-caret-position="216">
+              <caret line="23" column="14" selection-start-line="23" selection-start-column="5" selection-end-line="23" selection-end-column="14" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -49,10 +48,10 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/mindtree/springbootapi/configs/SecurityConfig.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/mindtree/springbootapi/jwt/JwtValidator.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-385">
-              <caret line="12" column="18" lean-forward="true" selection-start-line="12" selection-start-column="18" selection-end-line="12" selection-end-column="18" />
+            <state relative-caret-position="960">
+              <caret line="65" column="32" lean-forward="true" selection-start-line="65" selection-start-column="32" selection-end-line="65" selection-end-column="32" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -61,62 +60,59 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/mindtree/springbootapi/utils/UserAuthorities.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/mindtree/springbootapi/exceptions/ApiExceptionHandler.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="44">
-              <caret line="10" column="32" selection-start-line="10" selection-start-column="19" selection-end-line="10" selection-end-column="32" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/mindtree/springbootapi/controllers/UserController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="269">
-              <caret line="25" column="16" lean-forward="true" selection-start-line="25" selection-start-column="16" selection-end-line="25" selection-end-column="16" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#597#598#0" expanded="true" />
-                <element signature="e#642#643#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="100">
+              <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/mindtree/springbootapi/controllers/TopicController.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/mindtree/springbootapi/jwt/JwtConfig.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="233">
-              <caret line="31" column="48" lean-forward="true" selection-start-line="31" selection-start-column="48" selection-end-line="31" selection-end-column="48" />
+            <state relative-caret-position="51">
+              <caret line="9" column="10" selection-start-line="9" selection-start-column="10" selection-end-line="9" selection-end-column="10" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="e#374#375#0" expanded="true" />
+                <element signature="e#406#407#0" expanded="true" />
+                <element signature="e#455#456#0" expanded="true" />
+                <element signature="e#497#498#0" expanded="true" />
+                <element signature="e#469#470#0" expanded="true" />
+                <element signature="e#498#499#0" expanded="true" />
+                <element signature="e#542#543#0" expanded="true" />
+                <element signature="e#578#579#0" expanded="true" />
+                <element signature="e#661#662#0" expanded="true" />
+                <element signature="e#690#691#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/mindtree/springbootapi/models/Topic.java">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/application.properties">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="327">
-              <caret line="22" column="33" selection-start-line="22" selection-start-column="33" selection-end-line="22" selection-end-column="33" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="180">
+              <caret line="9" column="14" selection-start-line="9" selection-start-column="14" selection-end-line="9" selection-end-column="14" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/mindtree/springbootapi/models/Chapter.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/mindtree/springbootapi/jwt/AuthenticationRequest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="360">
-              <caret line="18" column="14" selection-start-line="18" selection-start-column="14" selection-end-line="18" selection-end-column="14" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#856#857#0" expanded="true" />
-                <element signature="e#884#885#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="200">
+              <caret line="10" column="68" selection-start-line="10" selection-start-column="68" selection-end-line="10" selection-end-column="68" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/security/spring-security-web/5.2.1.RELEASE/spring-security-web-5.2.1.RELEASE.jar!/org/springframework/security/web/context/SecurityContextPersistenceFilter.class">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="80">
+              <caret line="33" column="16" selection-start-line="33" selection-start-column="16" selection-end-line="33" selection-end-column="16" />
             </state>
           </provider>
         </entry>
@@ -148,8 +144,6 @@
         <option value="$PROJECT_DIR$/src/main/java/com/mindtree/springbootapi/exceptions/ApiExceptionHandler.java" />
         <option value="$PROJECT_DIR$/src/main/resources/application-test.properties" />
         <option value="$PROJECT_DIR$/src/main/java/com/mindtree/springbootapi/models/Topic.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/application.properties" />
-        <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/mindtree/springbootapi/dao/UserRepository.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/mindtree/springbootapi/services/MyUserDetailsService.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/mindtree/springbootapi/dao/AuthorityRepository.java" />
@@ -160,13 +154,22 @@
         <option value="$PROJECT_DIR$/src/main/java/com/mindtree/springbootapi/controllers/HomeController.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/mindtree/springbootapi/models/User.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/mindtree/springbootapi/services/UserService.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/mindtree/springbootapi/configs/AppConfig.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/mindtree/springbootapi/listeners/UserEntityListener.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/mindtree/springbootapi/controllers/UserController.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/mindtree/springbootapi/controllers/ChapterController.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/mindtree/springbootapi/controllers/TopicController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/mindtree/springbootapi/configs/SecurityConfig.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/mindtree/springbootapi/models/Chapter.java" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/mindtree/springbootapi/configs/AppConfig.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/mindtree/springbootapi/configs/SecurityConfig.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/mindtree/springbootapi/jwt/UsernameAndPassword.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/mindtree/springbootapi/jwt/AuthenticationRequest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/mindtree/springbootapi/jwt/JwtResponse.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/mindtree/springbootapi/configs/AppSecurityConfig.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/application.properties" />
+        <option value="$PROJECT_DIR$/src/main/java/com/mindtree/springbootapi/jwt/JwtUsernameAndPasswordAuthenticationFilter.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/mindtree/springbootapi/jwt/JwtConfig.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/mindtree/springbootapi/jwt/JwtValidator.java" />
       </list>
     </option>
   </component>
@@ -205,7 +208,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -255,25 +258,16 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="springbootapi" type="462c0819:PsiDirectoryNode" />
-              <item name="controllers" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="spring-boot-api" type="b2602c69:ProjectViewProjectNode" />
-              <item name="spring-boot-api" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="springbootapi" type="462c0819:PsiDirectoryNode" />
-              <item name="dao" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="spring-boot-api" type="b2602c69:ProjectViewProjectNode" />
-              <item name="spring-boot-api" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="springbootapi" type="462c0819:PsiDirectoryNode" />
               <item name="exceptions" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="spring-boot-api" type="b2602c69:ProjectViewProjectNode" />
+              <item name="spring-boot-api" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="springbootapi" type="462c0819:PsiDirectoryNode" />
+              <item name="jwt" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="spring-boot-api" type="b2602c69:ProjectViewProjectNode" />
@@ -307,30 +301,17 @@
               <item name="spring-boot-api" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="springbootapi" type="462c0819:PsiDirectoryNode" />
-              <item name="utils" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="spring-boot-api" type="b2602c69:ProjectViewProjectNode" />
-              <item name="spring-boot-api" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="spring-boot-api" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1588447845264" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1588523233737" />
     <property name="project.structure.last.edited" value="SDKs" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -395,7 +376,7 @@
     <frame x="-7" y="-7" width="1295" height="695" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4973545" visible="true" weight="0.27530363" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4973545" visible="true" weight="0.28016195" />
       <window_info id="Structure" order="1" sideWeight="0.5026455" side_tool="true" weight="0.2574899" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -405,8 +386,8 @@
       <window_info anchor="bottom" id="Messages" order="0" weight="0.44049734" />
       <window_info anchor="bottom" id="Message" order="1" />
       <window_info anchor="bottom" id="Find" order="2" weight="0.42451155" />
-      <window_info active="true" anchor="bottom" id="Run" order="3" sideWeight="0.49959514" visible="true" weight="0.120781526" />
-      <window_info anchor="bottom" id="Debug" order="4" weight="0.1758437" />
+      <window_info anchor="bottom" id="Run" order="3" sideWeight="0.49959514" weight="0.18472469" />
+      <window_info anchor="bottom" id="Debug" order="4" weight="0.44227353" />
       <window_info anchor="bottom" id="Cvs" order="5" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="6" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="7" weight="0.3285968" />
@@ -414,16 +395,16 @@
       <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.50040483" side_tool="true" weight="0.071047954" />
       <window_info anchor="bottom" id="Version Control" order="10" weight="0.3285968" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.24939272" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="right" id="Palette" order="3" />
-      <window_info anchor="right" id="Maven" order="4" weight="0.11821862" />
+      <window_info anchor="right" id="Maven" order="4" weight="0.28987855" />
       <window_info anchor="right" id="Theme Preview" order="5" />
       <window_info anchor="right" id="Capture Analysis" order="6" />
       <window_info anchor="right" id="Palette&#9;" order="7" />
     </layout>
     <layout-to-restore>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4973545" visible="true" weight="0.27125505" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4973545" visible="true" weight="0.28016195" />
       <window_info id="Structure" order="1" sideWeight="0.5026455" side_tool="true" weight="0.2574899" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -433,219 +414,29 @@
       <window_info anchor="bottom" id="Messages" order="0" weight="0.44049734" />
       <window_info anchor="bottom" id="Message" order="1" />
       <window_info anchor="bottom" id="Find" order="2" weight="0.42451155" />
-      <window_info anchor="bottom" id="Run" order="3" visible="true" weight="0.071047954" />
-      <window_info anchor="bottom" id="Debug" order="4" weight="0.053285968" />
+      <window_info anchor="bottom" id="Run" order="3" sideWeight="0.49959514" weight="0.6891652" />
+      <window_info anchor="bottom" id="Debug" order="4" weight="0.1545293" />
       <window_info anchor="bottom" id="Cvs" order="5" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="6" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="7" weight="0.3285968" />
       <window_info anchor="bottom" id="Terminal" order="8" weight="0.3285968" />
-      <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
+      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.50040483" side_tool="true" weight="0.071047954" />
       <window_info anchor="bottom" id="Version Control" order="10" weight="0.3285968" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.24939272" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="right" id="Palette" order="3" />
-      <window_info anchor="right" id="Maven" order="4" weight="0.11821862" />
+      <window_info anchor="right" id="Maven" order="4" weight="0.28987855" />
       <window_info anchor="right" id="Theme Preview" order="5" />
       <window_info anchor="right" id="Capture Analysis" order="6" />
       <window_info anchor="right" id="Palette&#9;" order="7" />
     </layout-to-restore>
   </component>
+  <component name="antWorkspaceConfiguration">
+    <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
+    <option name="FILTER_TARGETS" value="false" />
+  </component>
   <component name="editorHistoryManager">
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/boot/spring-boot/2.2.3.RELEASE/spring-boot-2.2.3.RELEASE-sources.jar!/org/springframework/boot/context/properties/ConfigurationProperties.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="183">
-          <caret line="48" column="18" selection-start-line="48" selection-start-column="18" selection-end-line="48" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-webmvc/5.2.3.RELEASE/spring-webmvc-5.2.3.RELEASE-sources.jar!/org/springframework/web/servlet/config/annotation/WebMvcConfigurer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1211">
-          <caret line="46" column="17" selection-start-line="46" selection-start-column="17" selection-end-line="46" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-webmvc/5.2.3.RELEASE/spring-webmvc-5.2.3.RELEASE-sources.jar!/org/springframework/web/servlet/config/annotation/CorsRegistration.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="55">
-          <caret line="61" column="28" selection-start-line="61" selection-start-column="28" selection-end-line="61" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_212/src.zip!/java/util/Collections.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-9661">
-          <caret line="79" column="13" selection-start-line="79" selection-start-column="13" selection-end-line="79" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/mindtree/springbootapi/App.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/mindtree/springbootapi/models/Response.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="460">
-          <caret line="28" column="20" selection-start-line="3" selection-end-line="28" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/mindtree/springbootapi/services/TopicService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="460">
-          <caret line="33" column="50" selection-start-line="33" selection-start-column="50" selection-end-line="33" selection-end-column="50" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1174#1175#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/mindtree/springbootapi/models/ListResponse.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="560">
-          <caret line="36" column="5" selection-start-line="5" selection-start-column="4" selection-end-line="36" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/mindtree/springbootapi/models/ErrorResponse.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="280">
-          <caret line="16" selection-start-line="16" selection-end-line="16" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/mindtree/springbootapi/exceptions/ApiExceptionHandler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="36">
-          <caret line="16" column="125" selection-start-line="16" selection-start-column="8" selection-end-line="16" selection-end-column="125" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/security/spring-security-config/5.2.1.RELEASE/spring-security-config-5.2.1.RELEASE.jar!/org/springframework/security/config/annotation/web/AbstractRequestMatcherRegistry.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="55" column="13" selection-start-line="55" selection-start-column="13" selection-end-line="55" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="680">
-          <caret line="34" column="21" selection-start-line="34" selection-start-column="21" selection-end-line="34" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/mindtree/springbootapi/dao/TopicRepository.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="80">
-          <caret line="6" column="70" selection-start-line="6" selection-start-column="70" selection-end-line="6" selection-end-column="70" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/com/sun/xml/fastinfoset/FastInfoset/1.2.16/FastInfoset-1.2.16-sources.jar!/com/sun/xml/fastinfoset/algorithm/BASE64EncodingAlgorithm.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="160">
-          <caret line="31" column="31" lean-forward="true" selection-start-line="31" selection-start-column="31" selection-end-line="31" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/security/spring-security-web/5.2.1.RELEASE/spring-security-web-5.2.1.RELEASE.jar!/org/springframework/security/web/csrf/CsrfTokenRepository.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="10" column="17" selection-start-line="10" selection-start-column="17" selection-end-line="10" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/security/spring-security-config/5.2.1.RELEASE/spring-security-config-5.2.1.RELEASE.jar!/org/springframework/security/config/annotation/web/configurers/CsrfConfigurer.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="169">
-          <caret line="49" column="29" selection-start-line="49" selection-start-column="29" selection-end-line="49" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/security/spring-security-config/5.2.1.RELEASE/spring-security-config-5.2.1.RELEASE.jar!/org/springframework/security/config/annotation/web/builders/HttpSecurity.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="20">
-          <caret line="94" selection-start-line="94" selection-end-line="94" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/mindtree/springbootapi/exceptions/ApiException.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="160">
-          <caret line="8" column="11" selection-start-line="8" selection-start-column="11" selection-end-line="8" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/mindtree/springbootapi/services/ChapterService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="401">
-          <caret line="33" column="81" selection-start-line="33" selection-start-column="81" selection-end-line="33" selection-end-column="81" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/mindtree/springbootapi/dao/AuthorityRepository.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="6" column="16" selection-end-line="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/security/spring-security-core/5.2.1.RELEASE/spring-security-core-5.2.1.RELEASE.jar!/org/springframework/security/core/authority/SimpleGrantedAuthority.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="179">
-          <caret line="14" column="11" selection-start-line="14" selection-start-column="11" selection-end-line="14" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/mindtree/springbootapi/models/Authority.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="40">
-          <caret line="9" column="32" lean-forward="true" selection-start-line="9" selection-start-column="32" selection-end-line="9" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/application-test.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="20">
-          <caret line="1" column="120" selection-start-line="1" selection-start-column="120" selection-end-line="1" selection-end-column="120" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/hibernate/hibernate-core/5.4.10.Final/hibernate-core-5.4.10.Final-sources.jar!/org/hibernate/jpa/event/internal/EntityCallback.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="122">
-          <caret line="32" selection-start-line="32" selection-end-line="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/hibernate/hibernate-core/5.4.10.Final/hibernate-core-5.4.10.Final-sources.jar!/org/hibernate/event/internal/AbstractSaveEventListener.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="202">
-          <caret line="119" selection-start-line="119" selection-end-line="119" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/org/hibernate/hibernate-core/5.4.10.Final/hibernate-core-5.4.10.Final-sources.jar!/org/hibernate/internal/SessionImpl.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="114">
@@ -681,23 +472,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="113">
           <caret line="51" column="19" selection-start-line="51" selection-start-column="19" selection-end-line="51" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/application.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="9" column="20" selection-start-line="9" selection-start-column="20" selection-end-line="9" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/mindtree/springbootapi/models/User.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="268">
-          <caret line="23" column="14" lean-forward="true" selection-start-line="23" selection-start-column="14" selection-end-line="23" selection-end-column="14" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -761,33 +535,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/mindtree/springbootapi/services/MyUserDetailsService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="59">
-          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/mindtree/springbootapi/services/UserService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="25" column="53" selection-start-line="25" selection-start-column="53" selection-end-line="25" selection-end-column="53" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/mindtree/springbootapi/configs/AppConfig.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="980">
-          <caret line="69" column="5" selection-start-line="69" selection-start-column="5" selection-end-line="69" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/security/spring-security-core/5.2.1.RELEASE/spring-security-core-5.2.1.RELEASE.jar!/org/springframework/security/access/prepost/PreAuthorize.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="200">
@@ -817,33 +564,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/mindtree/springbootapi/listeners/UserEntityListener.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1340">
-          <caret line="67" column="38" lean-forward="true" selection-start-line="67" selection-start-column="38" selection-end-line="67" selection-end-column="38" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/mindtree/springbootapi/configs/SecurityConfig.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-385">
-          <caret line="12" column="18" lean-forward="true" selection-start-line="12" selection-start-column="18" selection-end-line="12" selection-end-column="18" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/mindtree/springbootapi/utils/UserAuthorities.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="44">
-          <caret line="10" column="32" selection-start-line="10" selection-start-column="19" selection-end-line="10" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/mindtree/springbootapi/models/Topic.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="327">
@@ -868,10 +588,287 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/mindtree/springbootapi/controllers/TopicController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="233">
-          <caret line="31" column="48" lean-forward="true" selection-start-line="31" selection-start-column="48" selection-end-line="31" selection-end-column="48" />
+        <state relative-caret-position="540">
+          <caret line="31" column="48" selection-start-line="31" selection-start-column="48" selection-end-line="31" selection-end-column="48" />
           <folding>
             <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/mindtree/springbootapi/models/Authority.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="40">
+          <caret line="9" column="32" selection-start-line="9" selection-start-column="32" selection-end-line="9" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/mindtree/springbootapi/utils/UserAuthorities.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="200">
+          <caret line="10" column="32" selection-start-line="10" selection-start-column="19" selection-end-line="10" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/application-test.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="20">
+          <caret line="1" column="120" selection-start-line="1" selection-start-column="120" selection-end-line="1" selection-end-column="120" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/mindtree/springbootapi/services/MyUserDetailsService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="220">
+          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/mindtree/springbootapi/App.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="160">
+          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/mindtree/springbootapi/configs/AppConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1040">
+          <caret line="67" column="48" selection-start-line="67" selection-start-column="48" selection-end-line="67" selection-end-column="48" />
+          <folding>
+            <element signature="e#1217#1621#0" expanded="true" />
+            <element signature="e#1620#1621#0" expanded="true" />
+            <element signature="e#2229#2230#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/security/spring-security-config/5.2.1.RELEASE/spring-security-config-5.2.1.RELEASE.jar!/org/springframework/security/config/annotation/authentication/builders/AuthenticationManagerBuilder.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="169">
+          <caret line="66" column="103" selection-start-line="66" selection-start-column="103" selection-end-line="66" selection-end-column="103" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/mindtree/springbootapi/models/User.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="148">
+          <caret line="17" column="28" lean-forward="true" selection-start-line="16" selection-start-column="4" selection-end-line="17" selection-end-column="28" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/mindtree/springbootapi/listeners/UserEntityListener.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1340">
+          <caret line="67" column="38" lean-forward="true" selection-start-line="67" selection-start-column="38" selection-end-line="67" selection-end-column="38" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/security/spring-security-core/5.2.1.RELEASE/spring-security-core-5.2.1.RELEASE.jar!/org/springframework/security/core/Authentication.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="11" column="17" selection-start-line="11" selection-start-column="17" selection-end-line="11" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/security/spring-security-core/5.2.1.RELEASE/spring-security-core-5.2.1.RELEASE.jar!/org/springframework/security/authentication/UsernamePasswordAuthenticationToken.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="10" column="48" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/mindtree/springbootapi/services/UserService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="280">
+          <caret line="23" column="24" selection-start-line="23" selection-start-column="13" selection-end-line="23" selection-end-column="24" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1340">
+          <caret line="67" column="49" selection-start-line="67" selection-start-column="49" selection-end-line="67" selection-end-column="49" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/mindtree/springbootapi/models/Response.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="80">
+          <caret line="4" column="22" selection-start-line="4" selection-start-column="12" selection-end-line="4" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/security/spring-security-web/5.2.1.RELEASE/spring-security-web-5.2.1.RELEASE.jar!/org/springframework/security/web/authentication/AbstractAuthenticationProcessingFilter.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="160">
+          <caret line="91" selection-start-line="91" selection-end-line="91" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/security/spring-security-web/5.2.1.RELEASE/spring-security-web-5.2.1.RELEASE.jar!/org/springframework/security/web/header/HeaderWriterFilter.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="157">
+          <caret line="55" selection-start-line="55" selection-end-line="55" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/security/spring-security-web/5.2.1.RELEASE/spring-security-web-5.2.1.RELEASE.jar!/org/springframework/security/web/context/SecurityContextPersistenceFilter.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="80">
+          <caret line="33" column="16" selection-start-line="33" selection-start-column="16" selection-end-line="33" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/security/spring-security-web/5.2.1.RELEASE/spring-security-web-5.2.1.RELEASE.jar!/org/springframework/security/web/FilterChainProxy.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="80">
+          <caret line="54" column="16" selection-start-line="54" selection-start-column="16" selection-end-line="54" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-web/5.2.3.RELEASE/spring-web-5.2.3.RELEASE-sources.jar!/org/springframework/web/filter/RequestContextFilter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="197">
+          <caret line="107" selection-start-line="107" selection-end-line="107" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/tomcat/embed/tomcat-embed-core/9.0.30/tomcat-embed-core-9.0.30-sources.jar!/org/apache/catalina/core/ApplicationFilterChain.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="117">
+          <caret line="195" selection-start-line="195" selection-end-line="195" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/com/google/guava/guava/20.0/guava-20.0-sources.jar!/com/google/common/base/Strings.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="110">
+          <caret line="65" column="24" selection-start-line="65" selection-start-column="24" selection-end-line="65" selection-end-column="24" />
+          <folding>
+            <element signature="e#2498#2499#0" expanded="true" />
+            <element signature="e#2551#2552#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-web/5.2.3.RELEASE/spring-web-5.2.3.RELEASE-sources.jar!/org/springframework/http/HttpHeaders.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="160" column="31" selection-start-line="160" selection-start-column="31" selection-end-line="160" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/com/google/guava/guava/20.0/guava-20.0-sources.jar!/com/google/common/net/HttpHeaders.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="69" column="29" selection-start-line="69" selection-start-column="29" selection-end-line="69" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/io/jsonwebtoken/jjwt-api/0.11.1/jjwt-api-0.11.1.jar!/io/jsonwebtoken/security/Keys.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="320">
+          <caret line="28" column="28" selection-start-line="28" selection-start-column="28" selection-end-line="28" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/application.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="9" column="14" selection-start-line="9" selection-start-column="14" selection-end-line="9" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/mindtree/springbootapi/configs/AppSecurityConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="23" column="14" selection-start-line="23" selection-start-column="5" selection-end-line="23" selection-end-column="14" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-web/5.2.3.RELEASE/spring-web-5.2.3.RELEASE-sources.jar!/org/springframework/web/filter/OncePerRequestFilter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="96">
+          <caret line="122" selection-start-line="122" selection-end-line="122" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/mindtree/springbootapi/exceptions/ApiExceptionHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="100">
+          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/mindtree/springbootapi/jwt/JwtResponse.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="40">
+          <caret line="2" column="26" selection-start-line="2" selection-start-column="26" selection-end-line="2" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/mindtree/springbootapi/jwt/JwtUsernameAndPasswordAuthenticationFilter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="302">
+          <caret line="57" selection-start-line="57" selection-end-line="57" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/mindtree/springbootapi/jwt/JwtValidator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="960">
+          <caret line="65" column="32" lean-forward="true" selection-start-line="65" selection-start-column="32" selection-end-line="65" selection-end-column="32" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/mindtree/springbootapi/jwt/AuthenticationRequest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="200">
+          <caret line="10" column="68" selection-start-line="10" selection-start-column="68" selection-end-line="10" selection-end-column="68" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/mindtree/springbootapi/jwt/JwtConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="9" column="10" selection-start-line="9" selection-start-column="10" selection-end-line="9" selection-end-column="10" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#374#375#0" expanded="true" />
+            <element signature="e#406#407#0" expanded="true" />
+            <element signature="e#455#456#0" expanded="true" />
+            <element signature="e#497#498#0" expanded="true" />
+            <element signature="e#469#470#0" expanded="true" />
+            <element signature="e#498#499#0" expanded="true" />
+            <element signature="e#542#543#0" expanded="true" />
+            <element signature="e#578#579#0" expanded="true" />
+            <element signature="e#661#662#0" expanded="true" />
+            <element signature="e#690#691#0" expanded="true" />
           </folding>
         </state>
       </provider>
