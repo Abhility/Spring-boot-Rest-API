@@ -5,6 +5,7 @@ import com.mindtree.springbootapi.models.Response;
 import com.mindtree.springbootapi.models.User;
 import com.mindtree.springbootapi.services.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.web.bind.annotation.*;
 
 import javax.validation.Valid;
@@ -17,6 +18,7 @@ public class UserController {
     private UserService userService;
 
     @GetMapping
+    @PreAuthorize("hasAuthority('user:read')")
     public ListResponse<User> getUsers(){
         return userService.getUsers();
     }

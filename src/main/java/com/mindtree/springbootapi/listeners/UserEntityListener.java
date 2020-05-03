@@ -67,7 +67,7 @@ public class UserEntityListener {
             case "admin":
                 user.setRole("ADMIN");
                 break;
-            case "adminTrainee":
+            case "admintrainee":
                 user.setRole("ADMINTRAINEE");
                 break;
             default:
