@@ -59,6 +59,8 @@ public class AppSecurityConfig extends WebSecurityConfigurerAdapter {
                 .hasAnyAuthority(TOPIC_READ.getAuthority(),
                                  CHAPTER_READ.getAuthority())*/
                 .anyRequest()
-                .authenticated();
+                .authenticated()
+                .and()
+                .httpBasic();
     }
 }
